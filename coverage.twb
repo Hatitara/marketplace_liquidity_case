@@ -1,0 +1,2217 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='hourly_data' inline='true' name='federated.1kn2pyc1b336hb1ebsvr91t5v0ts' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='hourly_data' name='textscan.06bkwy3120w8t61gmg5v40l1zj6a'>
+            <connection class='textscan' directory='C:/Users/yarts/Desktop/cases/marketplace_liquidity_case/data' filename='hourly_data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.06bkwy3120w8t61gmg5v40l1zj6a' name='hourly_data.csv' table='[hourly_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='uk_UA'>
+            <column datatype='datetime' name='hour' ordinal='0' />
+            <column datatype='real' name='active_users' ordinal='1' />
+            <column datatype='real' name='new_user_sessions' ordinal='2' />
+            <column datatype='real' name='returning_user_sessions' ordinal='3' />
+            <column datatype='real' name='chat_sessions' ordinal='4' />
+            <column datatype='real' name='total_session_minutes' ordinal='5' />
+            <column datatype='real' name='active_experts' ordinal='6' />
+            <column datatype='real' name='scheduled_minutes' ordinal='7' />
+            <column datatype='real' name='online_minutes' ordinal='8' />
+            <column datatype='real' name='busy_minutes' ordinal='9' />
+            <column datatype='real' name='force_busy_minutes' ordinal='10' />
+            <column datatype='real' name='user_to_expert_ratio' ordinal='11' />
+            <column datatype='real' name='expert_utilization' ordinal='12' />
+            <column datatype='real' name='supply_minutes' ordinal='13' />
+            <column datatype='real' name='coverage_rate' ordinal='14' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[hourly_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;uk&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₴&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='exponent-char'>&quot;е&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;uk_UA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hour</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[hour]</local-name>
+            <parent-name>[hourly_data.csv]</parent-name>
+            <remote-alias>hour</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hourly_data.csv_ECD387C9068E442A8933875B08AF6F71]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>active_users</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[active_users]</local-name>
+            <parent-name>[hourly_data.csv]</parent-name>
+            <remote-alias>active_users</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hourly_data.csv_ECD387C9068E442A8933875B08AF6F71]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>new_user_sessions</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[new_user_sessions]</local-name>
+            <parent-name>[hourly_data.csv]</parent-name>
+            <remote-alias>new_user_sessions</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hourly_data.csv_ECD387C9068E442A8933875B08AF6F71]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>returning_user_sessions</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[returning_user_sessions]</local-name>
+            <parent-name>[hourly_data.csv]</parent-name>
+            <remote-alias>returning_user_sessions</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hourly_data.csv_ECD387C9068E442A8933875B08AF6F71]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>chat_sessions</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[chat_sessions]</local-name>
+            <parent-name>[hourly_data.csv]</parent-name>
+            <remote-alias>chat_sessions</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hourly_data.csv_ECD387C9068E442A8933875B08AF6F71]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_session_minutes</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_session_minutes]</local-name>
+            <parent-name>[hourly_data.csv]</parent-name>
+            <remote-alias>total_session_minutes</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hourly_data.csv_ECD387C9068E442A8933875B08AF6F71]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>active_experts</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[active_experts]</local-name>
+            <parent-name>[hourly_data.csv]</parent-name>
+            <remote-alias>active_experts</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hourly_data.csv_ECD387C9068E442A8933875B08AF6F71]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>scheduled_minutes</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[scheduled_minutes]</local-name>
+            <parent-name>[hourly_data.csv]</parent-name>
+            <remote-alias>scheduled_minutes</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hourly_data.csv_ECD387C9068E442A8933875B08AF6F71]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>online_minutes</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[online_minutes]</local-name>
+            <parent-name>[hourly_data.csv]</parent-name>
+            <remote-alias>online_minutes</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hourly_data.csv_ECD387C9068E442A8933875B08AF6F71]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>busy_minutes</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[busy_minutes]</local-name>
+            <parent-name>[hourly_data.csv]</parent-name>
+            <remote-alias>busy_minutes</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hourly_data.csv_ECD387C9068E442A8933875B08AF6F71]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>force_busy_minutes</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[force_busy_minutes]</local-name>
+            <parent-name>[hourly_data.csv]</parent-name>
+            <remote-alias>force_busy_minutes</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hourly_data.csv_ECD387C9068E442A8933875B08AF6F71]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>user_to_expert_ratio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[user_to_expert_ratio]</local-name>
+            <parent-name>[hourly_data.csv]</parent-name>
+            <remote-alias>user_to_expert_ratio</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hourly_data.csv_ECD387C9068E442A8933875B08AF6F71]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>expert_utilization</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[expert_utilization]</local-name>
+            <parent-name>[hourly_data.csv]</parent-name>
+            <remote-alias>expert_utilization</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hourly_data.csv_ECD387C9068E442A8933875B08AF6F71]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>supply_minutes</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[supply_minutes]</local-name>
+            <parent-name>[hourly_data.csv]</parent-name>
+            <remote-alias>supply_minutes</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hourly_data.csv_ECD387C9068E442A8933875B08AF6F71]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>coverage_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[coverage_rate]</local-name>
+            <parent-name>[hourly_data.csv]</parent-name>
+            <remote-alias>coverage_rate</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hourly_data.csv_ECD387C9068E442A8933875B08AF6F71]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='AvgUtilizationPctg' datatype='real' name='[Calculation_6312920813375913985]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([expert_utilization])*100' />
+      </column>
+      <column caption='AvgCoverage' datatype='real' name='[Calculation_6312920813384617987]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([coverage_rate])' />
+      </column>
+      <column caption='TotalSessionsHours' datatype='real' name='[Calculation_6312920813389459460]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='ROUND(SUM([total_session_minutes])/60)' />
+      </column>
+      <column caption='TotalSupplyHours' datatype='real' name='[Calculation_6312920813396611078]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='ROUND(SUM([supply_minutes])/60)' />
+      </column>
+      <column caption='ForceBusyRate' datatype='real' name='[Calculation_6312920813399556103]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([force_busy_minutes])/(SUM([online_minutes]) + SUM([busy_minutes]))' />
+      </column>
+      <column caption='ForceBusyShare' datatype='real' name='[Calculation_6312920813401698312]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Calculation_6312920813399556103]*100' />
+      </column>
+      <column caption='hourly_data.csv' datatype='table' name='[__tableau_internal_object_id__].[hourly_data.csv_ECD387C9068E442A8933875B08AF6F71]' role='measure' type='quantitative' />
+      <column datatype='real' name='[active_experts]' role='measure' type='quantitative' />
+      <column datatype='real' name='[active_users]' role='measure' type='quantitative' />
+      <column datatype='real' name='[coverage_rate]' role='measure' type='quantitative' />
+      <column datatype='real' name='[expert_utilization]' role='measure' type='quantitative' />
+      <column datatype='real' name='[new_user_sessions]' role='measure' type='quantitative' />
+      <column datatype='real' name='[returning_user_sessions]' role='measure' type='quantitative' />
+      <column datatype='real' name='[total_session_minutes]' role='measure' type='quantitative' />
+      <column datatype='real' name='[user_to_expert_ratio]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_6312920813401698312]' derivation='Avg' name='[avg:Calculation_6312920813401698312:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[coverage_rate]' derivation='Avg' name='[avg:coverage_rate:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[expert_utilization]' derivation='Avg' name='[avg:expert_utilization:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[user_to_expert_ratio]' derivation='Avg' name='[avg:user_to_expert_ratio:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[expert_utilization]' derivation='Median' name='[med:expert_utilization:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_6312920813401698312]' derivation='Sum' name='[sum:Calculation_6312920813401698312:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[active_experts]' derivation='Sum' name='[sum:active_experts:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[active_users]' derivation='Sum' name='[sum:active_users:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[coverage_rate]' derivation='Sum' name='[sum:coverage_rate:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[expert_utilization]' derivation='Sum' name='[sum:expert_utilization:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[new_user_sessions]' derivation='Sum' name='[sum:new_user_sessions:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[returning_user_sessions]' derivation='Sum' name='[sum:returning_user_sessions:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[total_session_minutes]' derivation='Sum' name='[sum:total_session_minutes:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[user_to_expert_ratio]' derivation='Sum' name='[sum:user_to_expert_ratio:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_6312920813375913985]' derivation='User' name='[usr:Calculation_6312920813375913985:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_6312920813384617987]' derivation='User' name='[usr:Calculation_6312920813384617987:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_6312920813389459460]' derivation='User' name='[usr:Calculation_6312920813389459460:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_6312920813396611078]' derivation='User' name='[usr:Calculation_6312920813396611078:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_6312920813399556103]' derivation='User' name='[usr:Calculation_6312920813399556103:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_6312920813401698312]' derivation='User' name='[usr:Calculation_6312920813401698312:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[user_to_expert_ratio]' derivation='Sum' name='[win:sum:user_to_expert_ratio:qk:2]' pivot='key' type='quantitative'>
+        <table-calc aggregation='Avg' from='-4' ordering-type='Rows' to='0' type='WindowTotal' window-options='IncludeCurrent' />
+      </column-instance>
+      <column-instance column='[user_to_expert_ratio]' derivation='Sum' name='[win:sum:user_to_expert_ratio:qk:4]' pivot='key' type='quantitative'>
+        <table-calc aggregation='Avg' from='-12' ordering-type='Rows' to='0' type='WindowTotal' window-options='IncludeCurrent' />
+      </column-instance>
+      <column-instance column='[user_to_expert_ratio]' derivation='Sum' name='[win:sum:user_to_expert_ratio:qk]' pivot='key' type='quantitative'>
+        <table-calc aggregation='Avg' from='-2' ordering-type='Rows' to='0' type='WindowTotal' window-options='IncludeCurrent' />
+      </column-instance>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/yarts/AppData/Local/Temp/TableauTemp/#TableauTemp_10c7ngx1ur2ur71bdl6cv0s8srg3.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='07/26/2025 05:55:08 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>hour</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[hour]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>hour</remote-alias>
+              <ordinal>0</ordinal>
+              <family>hourly_data.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>4407</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hourly_data.csv_ECD387C9068E442A8933875B08AF6F71]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>active_users</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[active_users]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>active_users</remote-alias>
+              <ordinal>1</ordinal>
+              <family>hourly_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>467</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hourly_data.csv_ECD387C9068E442A8933875B08AF6F71]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>new_user_sessions</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[new_user_sessions]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>new_user_sessions</remote-alias>
+              <ordinal>2</ordinal>
+              <family>hourly_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>355</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hourly_data.csv_ECD387C9068E442A8933875B08AF6F71]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>returning_user_sessions</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[returning_user_sessions]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>returning_user_sessions</remote-alias>
+              <ordinal>3</ordinal>
+              <family>hourly_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>453</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hourly_data.csv_ECD387C9068E442A8933875B08AF6F71]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>chat_sessions</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[chat_sessions]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>chat_sessions</remote-alias>
+              <ordinal>4</ordinal>
+              <family>hourly_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>679</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hourly_data.csv_ECD387C9068E442A8933875B08AF6F71]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_session_minutes</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[total_session_minutes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_session_minutes</remote-alias>
+              <ordinal>5</ordinal>
+              <family>hourly_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4246</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hourly_data.csv_ECD387C9068E442A8933875B08AF6F71]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>active_experts</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[active_experts]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>active_experts</remote-alias>
+              <ordinal>6</ordinal>
+              <family>hourly_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>253</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hourly_data.csv_ECD387C9068E442A8933875B08AF6F71]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>scheduled_minutes</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[scheduled_minutes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>scheduled_minutes</remote-alias>
+              <ordinal>7</ordinal>
+              <family>hourly_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>246</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hourly_data.csv_ECD387C9068E442A8933875B08AF6F71]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>online_minutes</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[online_minutes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>online_minutes</remote-alias>
+              <ordinal>8</ordinal>
+              <family>hourly_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4246</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hourly_data.csv_ECD387C9068E442A8933875B08AF6F71]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>busy_minutes</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[busy_minutes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>busy_minutes</remote-alias>
+              <ordinal>9</ordinal>
+              <family>hourly_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4246</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hourly_data.csv_ECD387C9068E442A8933875B08AF6F71]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>force_busy_minutes</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[force_busy_minutes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>force_busy_minutes</remote-alias>
+              <ordinal>10</ordinal>
+              <family>hourly_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4246</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hourly_data.csv_ECD387C9068E442A8933875B08AF6F71]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>user_to_expert_ratio</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[user_to_expert_ratio]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>user_to_expert_ratio</remote-alias>
+              <ordinal>11</ordinal>
+              <family>hourly_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2571</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hourly_data.csv_ECD387C9068E442A8933875B08AF6F71]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>expert_utilization</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[expert_utilization]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>expert_utilization</remote-alias>
+              <ordinal>12</ordinal>
+              <family>hourly_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4246</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hourly_data.csv_ECD387C9068E442A8933875B08AF6F71]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>supply_minutes</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[supply_minutes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>supply_minutes</remote-alias>
+              <ordinal>13</ordinal>
+              <family>hourly_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4246</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hourly_data.csv_ECD387C9068E442A8933875B08AF6F71]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>coverage_rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[coverage_rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>coverage_rate</remote-alias>
+              <ordinal>14</ordinal>
+              <family>hourly_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4246</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hourly_data.csv_ECD387C9068E442A8933875B08AF6F71]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' palette='color_blind_10_0' type='palette'>
+            <map to='#1170aa'>
+              <bucket>&quot;[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[avg:Calculation_6312920813401698312:qk]&quot;</bucket>
+            </map>
+            <map to='#1170aa'>
+              <bucket>&quot;[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[sum:Calculation_6312920813401698312:qk]&quot;</bucket>
+            </map>
+            <map to='#1170aa'>
+              <bucket>&quot;[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[usr:Calculation_6312920813396611078:qk]&quot;</bucket>
+            </map>
+            <map to='#1170aa'>
+              <bucket>&quot;[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[usr:Calculation_6312920813399556103:qk]&quot;</bucket>
+            </map>
+            <map to='#1170aa'>
+              <bucket>&quot;[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[usr:Calculation_6312920813401698312:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[sum:active_experts:qk]&quot;</bucket>
+            </map>
+            <map to='#57606c'>
+              <bucket>&quot;[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[usr:Calculation_6312920813384617987:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[avg:coverage_rate:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[avg:expert_utilization:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[med:expert_utilization:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[sum:coverage_rate:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[sum:expert_utilization:qk]&quot;</bucket>
+            </map>
+            <map to='#5fa2ce'>
+              <bucket>&quot;[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[sum:returning_user_sessions:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[avg:user_to_expert_ratio:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[win:sum:user_to_expert_ratio:qk:2]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[win:sum:user_to_expert_ratio:qk:4]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[win:sum:user_to_expert_ratio:qk]&quot;</bucket>
+            </map>
+            <map to='#a3acb9'>
+              <bucket>&quot;[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[usr:Calculation_6312920813389459460:qk]&quot;</bucket>
+            </map>
+            <map to='#c85200'>
+              <bucket>&quot;[federated.1kn2pyc1b336hb1ebsvr91t5v0ts]&quot;</bucket>
+            </map>
+            <map to='#c85200'>
+              <bucket>&quot;[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[sum:user_to_expert_ratio:qk]&quot;</bucket>
+            </map>
+            <map to='#c85200'>
+              <bucket>&quot;[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[usr:Calculation_6312920813375913985:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[sum:total_session_minutes:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[sum:active_users:qk]&quot;</bucket>
+            </map>
+            <map to='#fc7d0b'>
+              <bucket>&quot;[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[sum:new_user_sessions:qk]&quot;</bucket>
+            </map>
+            <map to='#ffbc79'>
+              <bucket>&quot;[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[usr:Calculation_6312920813392609285:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Ukraine&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='hourly_data.csv' id='hourly_data.csv_ECD387C9068E442A8933875B08AF6F71'>
+            <properties context=''>
+              <relation connection='textscan.06bkwy3120w8t61gmg5v40l1zj6a' name='hourly_data.csv' table='[hourly_data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='uk_UA'>
+                  <column datatype='datetime' name='hour' ordinal='0' />
+                  <column datatype='real' name='active_users' ordinal='1' />
+                  <column datatype='real' name='new_user_sessions' ordinal='2' />
+                  <column datatype='real' name='returning_user_sessions' ordinal='3' />
+                  <column datatype='real' name='chat_sessions' ordinal='4' />
+                  <column datatype='real' name='total_session_minutes' ordinal='5' />
+                  <column datatype='real' name='active_experts' ordinal='6' />
+                  <column datatype='real' name='scheduled_minutes' ordinal='7' />
+                  <column datatype='real' name='online_minutes' ordinal='8' />
+                  <column datatype='real' name='busy_minutes' ordinal='9' />
+                  <column datatype='real' name='force_busy_minutes' ordinal='10' />
+                  <column datatype='real' name='user_to_expert_ratio' ordinal='11' />
+                  <column datatype='real' name='expert_utilization' ordinal='12' />
+                  <column datatype='real' name='supply_minutes' ordinal='13' />
+                  <column datatype='real' name='coverage_rate' ordinal='14' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.1kn2pyc1b336hb1ebsvr91t5v0ts'>
+      <datasources>
+        <datasource caption='hourly_data' name='federated.1kn2pyc1b336hb1ebsvr91t5v0ts' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1kn2pyc1b336hb1ebsvr91t5v0ts'>
+        <column datatype='datetime' name='[hour]' role='dimension' type='ordinal' />
+        <column-instance column='[hour]' derivation='None' name='[none:hour:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <filter class='quantitative' column='[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[none:hour:qk]' included-values='in-range'>
+        <min>#2025-01-11 09:00:00#</min>
+        <max>#2025-07-13 23:00:00#</max>
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Highlight 1 (generated) 1' name='[Action2_4827BEFD5BD24DD39FE2A64590BA3CD4]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='SessionsPlots' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Measure Names' />
+        <param name='target' value='SessionsPlots' />
+      </command>
+    </action>
+    <action caption='Filter 1 (generated)' name='[Action2_EB2E34EC382840D294B59D78DFBA3676]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='HistoryOverview' type='sheet' worksheet='UtilCovPlot' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='HistoryOverview' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action3_7A353EC46C7D41369DF786799C2A2385]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='HistoryOverview' type='sheet' worksheet='SessionsPlots' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='HistoryOverview' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action4_4A22EEDC1DD8466E85A6CABC4B289BA8]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='HistoryOverview' type='sheet' worksheet='UserToExpertPlot' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='HistoryOverview' />
+      </command>
+    </action>
+    <action caption='Filter 4 (generated)' name='[Action5_5B228718EB6E4C93A11D2A4DF8AA1C33]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='HistoryOverview' type='sheet' worksheet='ForceBusyPlot' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='HistoryOverview' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='ExpertUtilization'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Average User To Expert Ratio</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hourly_data' name='federated.1kn2pyc1b336hb1ebsvr91t5v0ts' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1kn2pyc1b336hb1ebsvr91t5v0ts'>
+            <column caption='AvgUtilizationPctg' datatype='real' name='[Calculation_6312920813375913985]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([expert_utilization])*100' />
+            </column>
+            <column datatype='real' name='[expert_utilization]' role='measure' type='quantitative' />
+            <column datatype='datetime' name='[hour]' role='dimension' type='ordinal' />
+            <column-instance column='[hour]' derivation='None' name='[none:hour:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_6312920813375913985]' derivation='User' name='[usr:Calculation_6312920813375913985:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[none:hour:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[usr:Calculation_6312920813375913985:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#ffbc79' fontsize='28'><![CDATA[<[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[usr:Calculation_6312920813375913985:qk]>%]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#ffbc79' fontname='Tableau Light' fontsize='10'>Expert Utilization</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{C7FCCD9F-D373-443B-AC8C-F14489084C50}' />
+    </worksheet>
+    <worksheet name='ForceBusyPlot'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hourly_data' name='federated.1kn2pyc1b336hb1ebsvr91t5v0ts' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1kn2pyc1b336hb1ebsvr91t5v0ts'>
+            <column caption='ForceBusyRate' datatype='real' name='[Calculation_6312920813399556103]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([force_busy_minutes])/(SUM([online_minutes]) + SUM([busy_minutes]))' />
+            </column>
+            <column caption='ForceBusyShare' datatype='real' name='[Calculation_6312920813401698312]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_6312920813399556103]*100' />
+            </column>
+            <column datatype='real' name='[busy_minutes]' role='measure' type='quantitative' />
+            <column datatype='real' name='[force_busy_minutes]' role='measure' type='quantitative' />
+            <column datatype='datetime' name='[hour]' role='dimension' type='ordinal' />
+            <column-instance column='[hour]' derivation='None' name='[none:hour:qk]' pivot='key' type='quantitative' />
+            <column datatype='real' name='[online_minutes]' role='measure' type='quantitative' />
+            <column-instance column='[hour]' derivation='Day-Trunc' name='[tdy:hour:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_6312920813399556103]' derivation='User' name='[usr:Calculation_6312920813399556103:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_6312920813401698312]' derivation='User' name='[usr:Calculation_6312920813401698312:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[none:hour:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[tdy:hour:qk]' scope='cols' value='' />
+            <format attr='title' class='0' field='[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[usr:Calculation_6312920813399556103:qk]' scope='rows' value='' />
+            <format attr='display' class='0' field='[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[usr:Calculation_6312920813399556103:qk]' scope='rows' value='true' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[tdy:hour:qk]' value='*dd-mm-yy' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[:Measure Names]' />
+              <tooltip column='[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[usr:Calculation_6312920813401698312:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#757575'>Force Busy Minutes:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[usr:Calculation_6312920813401698312:qk]>]]></run>
+                <run bold='true'>%</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#898989'><![CDATA[<[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[tdy:hour:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[usr:Calculation_6312920813399556103:qk]</rows>
+        <cols>[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[tdy:hour:qk]</cols>
+      </table>
+      <simple-id uuid='{4E2B7CB2-CB6F-42FD-B281-EC87FF7803E3}' />
+    </worksheet>
+    <worksheet name='ForceBusyShare'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Average User To Expert Ratio</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hourly_data' name='federated.1kn2pyc1b336hb1ebsvr91t5v0ts' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1kn2pyc1b336hb1ebsvr91t5v0ts'>
+            <column caption='ForceBusyRate' datatype='real' name='[Calculation_6312920813399556103]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([force_busy_minutes])/(SUM([online_minutes]) + SUM([busy_minutes]))' />
+            </column>
+            <column caption='ForceBusyShare' datatype='real' name='[Calculation_6312920813401698312]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_6312920813399556103]*100' />
+            </column>
+            <column datatype='real' name='[busy_minutes]' role='measure' type='quantitative' />
+            <column datatype='real' name='[force_busy_minutes]' role='measure' type='quantitative' />
+            <column datatype='datetime' name='[hour]' role='dimension' type='ordinal' />
+            <column-instance column='[hour]' derivation='None' name='[none:hour:qk]' pivot='key' type='quantitative' />
+            <column datatype='real' name='[online_minutes]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_6312920813401698312]' derivation='User' name='[usr:Calculation_6312920813401698312:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[none:hour:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[usr:Calculation_6312920813401698312:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#1170aa' fontsize='28'><![CDATA[<[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[usr:Calculation_6312920813401698312:qk]>%]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#1170aa' fontsize='10'>Forse Busy Share</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{57F1E5A2-EA45-46DD-A1F5-E02AACB9F649}' />
+    </worksheet>
+    <worksheet name='SessionsPlots'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hourly_data' name='federated.1kn2pyc1b336hb1ebsvr91t5v0ts' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1kn2pyc1b336hb1ebsvr91t5v0ts'>
+            <column caption='TotalSessionsHours' datatype='real' name='[Calculation_6312920813389459460]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='ROUND(SUM([total_session_minutes])/60)' />
+            </column>
+            <column datatype='datetime' name='[hour]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[new_user_sessions]' role='measure' type='quantitative' />
+            <column-instance column='[hour]' derivation='None' name='[none:hour:qk]' pivot='key' type='quantitative' />
+            <column datatype='real' name='[returning_user_sessions]' role='measure' type='quantitative' />
+            <column-instance column='[new_user_sessions]' derivation='Sum' name='[sum:new_user_sessions:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[returning_user_sessions]' derivation='Sum' name='[sum:returning_user_sessions:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[hour]' derivation='Day-Trunc' name='[tdy:hour:qk]' pivot='key' type='quantitative' />
+            <column datatype='real' name='[total_session_minutes]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_6312920813389459460]' derivation='User' name='[usr:Calculation_6312920813389459460:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[sum:new_user_sessions:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[sum:returning_user_sessions:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[:Measure Names]</column>
+            <column>[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[none:hour:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[tdy:hour:qk]' scope='cols' value='' />
+            <format attr='display' class='0' field='[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[Multiple Values]' scope='rows' value='false' />
+            <encoding attr='space' class='0' field='[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[usr:Calculation_6312920813389459460:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='display' class='0' field='[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[usr:Calculation_6312920813389459460:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[tdy:hour:qk]' value='*dd-mm-yy' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='8' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[:Measure Names]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#757575'>Amount:&#9;</run>
+                <run bold='true' fontcolor='#000000'><![CDATA[<[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[Multiple Values]> ]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#898989'><![CDATA[<[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[tdy:hour:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='9' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[Multiple Values]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[:Measure Names]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#757575'><![CDATA[<[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[:Measure Names]>:	]]></run>
+                <run bold='true' fontcolor='#000000'><![CDATA[<[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[Multiple Values]> ]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#898989'><![CDATA[<[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[tdy:hour:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='10' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[usr:Calculation_6312920813389459460:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[:Measure Names]' />
+              <tooltip column='[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[usr:Calculation_6312920813389459460:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#898989'>Total Sessions Time:</run>
+                <run bold='true' fontcolor='#898989'>Æ&#9;</run>
+                <run bold='true' fontcolor='#000000'><![CDATA[<[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[usr:Calculation_6312920813389459460:qk]> h]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#898989'><![CDATA[<[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[tdy:hour:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[Multiple Values] + [federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[usr:Calculation_6312920813389459460:qk])</rows>
+        <cols>[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[tdy:hour:qk]</cols>
+      </table>
+      <simple-id uuid='{7E0AEAD1-A97B-44D1-812D-4EA45892D597}' />
+    </worksheet>
+    <worksheet name='SupplyCoverage'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Average User To Expert Ratio</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hourly_data' name='federated.1kn2pyc1b336hb1ebsvr91t5v0ts' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1kn2pyc1b336hb1ebsvr91t5v0ts'>
+            <column-instance column='[coverage_rate]' derivation='Avg' name='[avg:coverage_rate:qk]' pivot='key' type='quantitative' />
+            <column datatype='real' name='[coverage_rate]' role='measure' type='quantitative' />
+            <column datatype='datetime' name='[hour]' role='dimension' type='ordinal' />
+            <column-instance column='[hour]' derivation='None' name='[none:hour:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[none:hour:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[avg:coverage_rate:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#57606c' fontsize='28'><![CDATA[<[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[avg:coverage_rate:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#57606c' fontname='Tableau Light' fontsize='10'>Sup. Coverage Rate</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{C7DA3202-826B-49C7-920F-48687EACC755}' />
+    </worksheet>
+    <worksheet name='UserToExpertPlot'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hourly_data' name='federated.1kn2pyc1b336hb1ebsvr91t5v0ts' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1kn2pyc1b336hb1ebsvr91t5v0ts'>
+            <column datatype='datetime' name='[hour]' role='dimension' type='ordinal' />
+            <column-instance column='[hour]' derivation='None' name='[none:hour:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[user_to_expert_ratio]' derivation='Sum' name='[sum:user_to_expert_ratio:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[hour]' derivation='Hour-Trunc' name='[thr:hour:qk]' pivot='key' type='quantitative' />
+            <column datatype='real' name='[user_to_expert_ratio]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[none:hour:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[sum:user_to_expert_ratio:qk]' scope='rows' value='' />
+            <format attr='title' class='0' field='[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[thr:hour:qk]' scope='cols' value='' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[thr:hour:qk]' value='*dd-mm-yy' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[:Measure Names]' />
+              <tooltip column='[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[sum:user_to_expert_ratio:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#757575'>Ratio:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[sum:user_to_expert_ratio:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#898989'><![CDATA[<[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[thr:hour:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[sum:user_to_expert_ratio:qk]</rows>
+        <cols>[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[thr:hour:qk]</cols>
+      </table>
+      <simple-id uuid='{E6354FC8-6F52-4B6B-AEC0-3A863656CA0B}' />
+    </worksheet>
+    <worksheet name='UserToExpertRatio'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Average User To Expert Ratio</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hourly_data' name='federated.1kn2pyc1b336hb1ebsvr91t5v0ts' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1kn2pyc1b336hb1ebsvr91t5v0ts'>
+            <column-instance column='[user_to_expert_ratio]' derivation='Avg' name='[avg:user_to_expert_ratio:qk]' pivot='key' type='quantitative' />
+            <column datatype='datetime' name='[hour]' role='dimension' type='ordinal' />
+            <column-instance column='[hour]' derivation='None' name='[none:hour:qk]' pivot='key' type='quantitative' />
+            <column datatype='real' name='[user_to_expert_ratio]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[none:hour:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[avg:user_to_expert_ratio:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#c85200' fontsize='28'><![CDATA[<[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[avg:user_to_expert_ratio:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#c85200' fontname='Tableau Light' fontsize='10'>User To Expert Ratio</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{14C41479-A560-4019-A524-F896866FEE44}' />
+    </worksheet>
+    <worksheet name='UtilCovPlot'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hourly_data' name='federated.1kn2pyc1b336hb1ebsvr91t5v0ts' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1kn2pyc1b336hb1ebsvr91t5v0ts'>
+            <column caption='AvgUtilizationPctg' datatype='real' name='[Calculation_6312920813375913985]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([expert_utilization])*100' />
+            </column>
+            <column caption='AvgCoverage' datatype='real' name='[Calculation_6312920813384617987]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([coverage_rate])' />
+            </column>
+            <column caption='[AvgUtilizationPctg]/100' datatype='real' name='[Calculation_6312920813392609285]' role='measure' type='quantitative' user:unnamed='UtilCovPlot'>
+              <calculation class='tableau' formula='[Calculation_6312920813375913985]/100' />
+            </column>
+            <column datatype='real' name='[coverage_rate]' role='measure' type='quantitative' />
+            <column datatype='real' name='[expert_utilization]' role='measure' type='quantitative' />
+            <column datatype='datetime' name='[hour]' role='dimension' type='ordinal' />
+            <column-instance column='[hour]' derivation='None' name='[none:hour:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[hour]' derivation='Hour-Trunc' name='[thr:hour:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_6312920813375913985]' derivation='User' name='[usr:Calculation_6312920813375913985:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_6312920813384617987]' derivation='User' name='[usr:Calculation_6312920813384617987:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_6312920813392609285]' derivation='User' name='[usr:Calculation_6312920813392609285:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[none:hour:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[usr:Calculation_6312920813384617987:qk]' scope='rows' value='' />
+            <encoding attr='space' class='0' field='[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[usr:Calculation_6312920813384617987:qk]' field-type='quantitative' max='6.0' min='0.0' range-type='fixed' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[usr:Calculation_6312920813392609285:qk]' scope='rows' value='' />
+            <format attr='title' class='0' field='[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[thr:hour:qk]' scope='cols' value='' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[thr:hour:qk]' value='*dd-mm-yy' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='subtotal' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[:Measure Names]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#757575'>Expert Utilization:&#9;</run>
+                <run bold='true' fontcolor='#000000'><![CDATA[<[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[usr:Calculation_6312920813375913985:qk]> ]]></run>
+                <run bold='true'>%</run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[<[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[thr:hour:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[usr:Calculation_6312920813392609285:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[:Measure Names]' />
+              <tooltip column='[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[usr:Calculation_6312920813375913985:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#757575'>Expert Utilization:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[usr:Calculation_6312920813375913985:qk]>]]></run>
+                <run bold='true' fontcolor='#000000'>Æ </run>
+                <run bold='true'>%</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#898989'><![CDATA[<[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[tsc:hour:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='7' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[usr:Calculation_6312920813384617987:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[:Measure Names]' />
+              <tooltip column='[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[usr:Calculation_6312920813384617987:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#757575'>Supply Coverage:&#9;</run>
+                <run bold='true' fontcolor='#000000'><![CDATA[<[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[usr:Calculation_6312920813384617987:qk]> ]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#898989'><![CDATA[<[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[thr:hour:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[usr:Calculation_6312920813392609285:qk] + [federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[usr:Calculation_6312920813384617987:qk])</rows>
+        <cols>[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[thr:hour:qk]</cols>
+      </table>
+      <simple-id uuid='{38C52A12-2F88-49EF-BCA3-B9F80BB14AA3}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='HistoryOverview'>
+      <style />
+      <size maxheight='901' maxwidth='1757' minheight='801' minwidth='1657' sizing-mode='range' />
+      <datasources>
+        <datasource caption='hourly_data' name='federated.1kn2pyc1b336hb1ebsvr91t5v0ts' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1kn2pyc1b336hb1ebsvr91t5v0ts'>
+        <column datatype='datetime' name='[hour]' role='dimension' type='ordinal' />
+        <column-instance column='[hour]' derivation='None' name='[none:hour:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='7491' id='3' type-v2='empty' w='100000' x='0' y='0'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='background-color' value='#e6e6e6' />
+          </zone-style>
+        </zone>
+        <zone h='11236' id='4' name='UserToExpertRatio' show-title='false' w='10863' x='0' y='7491' />
+        <zone h='11236' id='5' name='ExpertUtilization' show-title='false' w='10863' x='0' y='19850' />
+        <zone h='11236' id='6' name='SupplyCoverage' show-title='false' w='10863' x='0' y='32210' />
+        <zone h='11236' id='7' name='ForceBusyShare' show-title='false' w='10863' x='0' y='44569' />
+        <zone h='48315' id='8' name='UtilCovPlot' show-title='false' w='88594' x='11406' y='7491' />
+        <zone h='43071' id='9' name='SessionsPlots' show-title='false' w='42366' x='0' y='56929' />
+        <zone h='2497' id='11' name='SessionsPlots' param='[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[none:hour:qk]' show-title='false' type-v2='filter' values='database' w='65540' x='543' y='3121' />
+        <zone h='21723' id='12' name='UserToExpertPlot' show-title='false' w='57091' x='42909' y='56929' />
+        <zone h='20225' id='13' name='ForceBusyPlot' show-title='false' w='57091' x='42909' y='79775' />
+        <zone forceUpdate='true' h='6367' id='14' type-v2='text' w='25468' x='71273' y='1124'>
+          <formatted-text>
+            <run bold='true' fontname='Tableau Bold' fontsize='24'>Platform Coverage</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1550' minheight='1550' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='16' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98002' id='15' param='vert' type-v2='layout-flow' w='99034' x='483' y='999'>
+                <zone forceUpdate='true' h='6367' id='14' type-v2='text' w='25468' x='71273' y='1124'>
+                  <formatted-text>
+                    <run bold='true' fontname='Tableau Bold' fontsize='24'>Platform Coverage</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='102' h='11236' id='4' is-fixed='true' name='UserToExpertRatio' show-title='false' w='10863' x='0' y='7491'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48315' id='8' is-fixed='true' name='UtilCovPlot' show-title='false' w='88594' x='11406' y='7491'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='101' h='11236' id='5' is-fixed='true' name='ExpertUtilization' show-title='false' w='10863' x='0' y='19850'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='101' h='11236' id='6' is-fixed='true' name='SupplyCoverage' show-title='false' w='10863' x='0' y='32210'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='101' h='11236' id='7' is-fixed='true' name='ForceBusyShare' show-title='false' w='10863' x='0' y='44569'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='2497' id='11' name='SessionsPlots' param='[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[none:hour:qk]' show-title='false' type-v2='filter' values='database' w='65540' x='543' y='3121'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='43071' id='9' is-fixed='true' name='SessionsPlots' show-title='false' w='42366' x='0' y='56929'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='196' h='21723' id='12' is-fixed='true' name='UserToExpertPlot' show-title='false' w='57091' x='42909' y='56929'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='182' h='20225' id='13' is-fixed='true' name='ForceBusyPlot' show-title='false' w='57091' x='42909' y='79775'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{7A5F842A-941C-4F92-B54F-DD16820E32B9}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='dashboard' maximized='true' name='HistoryOverview'>
+      <viewpoints>
+        <viewpoint name='ExpertUtilization' />
+        <viewpoint name='ForceBusyPlot'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='ForceBusyShare' />
+        <viewpoint name='SessionsPlots'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='SupplyCoverage' />
+        <viewpoint name='UserToExpertPlot'>
+          <zoom type='entire-view' />
+          <highlight field='[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[:Measure Names]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+        <viewpoint name='UserToExpertRatio' />
+        <viewpoint name='UtilCovPlot'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <device-preview selected='Desktop' />
+      <simple-id uuid='{DF4826F8-2ABA-4065-AE68-25D5B9957B7F}' />
+    </window>
+    <window class='worksheet' hidden='true' name='ExpertUtilization'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[:Measure Names]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{37290D0F-3780-4A0B-8D44-10044590C5F1}' />
+    </window>
+    <window class='worksheet' hidden='true' name='ForceBusyPlot'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='4' param='[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[thr:hour:qk]</field>
+            <field>[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[yr:hour:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{FAD95DD9-C251-4B80-93BF-A82080CF2C6F}' />
+    </window>
+    <window class='worksheet' hidden='true' name='ForceBusyShare'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[:Measure Names]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{CDEA48B7-5E9C-4297-92B5-76B7EB293F6D}' />
+    </window>
+    <window class='worksheet' hidden='true' name='SessionsPlots'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='9' param='[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <node-selection select-tuples='false'>
+            <oriented-node-reference orientation='vertical'>
+              <node-reference>
+                <axis>[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[usr:Calculation_6312920813389459460:qk]</axis>
+              </node-reference>
+              <page-reference />
+            </oriented-node-reference>
+          </node-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[thr:hour:qk]</field>
+            <field>[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[yr:hour:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A17C0F92-D187-4AC2-9CDA-9BBFC0D2E6AD}' />
+    </window>
+    <window class='worksheet' hidden='true' name='SupplyCoverage'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[:Measure Names]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{7962C2FA-4E90-48AE-8CC3-C7B843888BB8}' />
+    </window>
+    <window class='worksheet' hidden='true' name='UserToExpertPlot'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='4' param='[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[none:hour:qk]</field>
+            <field>[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[thr:hour:qk]</field>
+            <field>[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[yr:hour:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{5502CC6B-99AD-4263-8DDE-AAEBA1047A48}' />
+    </window>
+    <window class='worksheet' hidden='true' name='UserToExpertRatio'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[:Measure Names]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0645FD3D-EFD8-4C9F-B308-42305FCD6E17}' />
+    </window>
+    <window class='worksheet' hidden='true' name='UtilCovPlot'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[thr:hour:qk]</field>
+            <field>[federated.1kn2pyc1b336hb1ebsvr91t5v0ts].[yr:hour:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D4DB520E-5A0F-41E9-B811-FECDD49217EB}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='HistoryOverview' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
